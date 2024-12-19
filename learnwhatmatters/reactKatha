@@ -1,0 +1,22 @@
+Facebook ko ek problem najar aai ki real time main wo notification and reactions ka show nahi kar paa rahe hai,
+unhe reactions,notification and other data deliver karne main page reload karna pad rha hai,and wo isliye kyuki
+they were using something called PHP, ab is problem se nipatane ke liye 2013 main facebook ke engineering team 
+ne ek library banaai ye library khas thi, kyuki ye data ko real time mein dikha paa rahi thi , par is library 
+ke kaam karne ka tareeka different tha, ye main DOM tree ko update nahi krti hai directly, matlab ki agar page
+mein kuchh bhi change hua to directly main DOM tree update nahi hoga, is library ka khud ka ek DOM tree hai 
+uska naam hai virtual DOM ye DOM tree exact copy hai real DOM tree ka, bas ek difference hai, wo hai ki jab 
+bhi virtual DOM mein kuchh change hoga to sirf use change kiya jaayega jo ki change hua hai ki nahi poore 
+tree ko refresh kiya jayega.
+
+
+Benifits of using React to create a website
+    -> very very less page relodes
+    -> extreme use of components
+    -> very efficient
+
+react learn what matters 
+what -> js libary to maintain frontend efficient
+why ->  reactjs is more mantainble and efficient, lightweight
+How -> create components and make data if you needed and change data whenever you want, react will react jab v data change hoga
+
+when -> jb aapko thora bade level par app create krna ho jaha bhut sare components or changes ho rahi ho.   

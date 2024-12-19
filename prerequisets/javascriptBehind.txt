@@ -1,0 +1,40 @@
+00:00:01	in this lecture you will learn how a javascript code which we write gets executed a javascript code is always hosted in some environment and in case of client set javascript the environment is typically a browser like google chrome or firefox so a client said javascript runs inside a browser every browser has something called as javascript engine which is responsible for passing and executing javascript code for example the javascript engine for google chrome is v8 for firefox it is spider-monkey
+
+00:00:38	and for internet explorer it is chakra this javascript engine is built in in the browsers so let's understand how this javascript engine passes and executes the javascript code when we run that javascript code inside the browser when you run a javascript code inside the browser the first thing that happens is that the javascript engine parses the javascript code line by line while parsing the code javascript engine also checks if the syntax of the code in the program is correct or not if you have an error
+
+00:01:18	in your javascript code then javascript engine will stop passing immediately and it will throw the error and that error can be seen in the developer console however if everything is fine then javascript engine will convert the javascript code into something called as abstract syntax tree and this abstract syntax tree is a data structure and from that abstract syntax tree the javascript engine will convert the javascript code into a machine code now an operating system does not understand high level languages such as
+
+00:01:55	javascript so it needs to be converted to a machine code so that an operating system can understand the instructions and give the appropriate result once the javascript code is converted into machine code the javascript engine will run that code and it will give us the result so this is the high level of what happens behind the scenes when you run a javascript code inside the browser let's understand this with an example in this sample javascript code we have two global variables name and age and we
+
+00:02:33	have three functions first second and third now if you notice here inside the second function we are trying to use a variable b which is in caps but this variable we have not defined we have defined a variable b which is in lower case but we have not defined any variable b which is an upper case so here we have an error so when the javascript engine you know when we run this program in the browser and javascript engines start passing this code this javascript engine will find an error at this line so javascript
+
+00:03:11	engine will stop passing of this javascript code immediately and it will throw that error and that error can be seen inside this developer console so let's understand how the execution will happen so here the first thing which we are doing is we are calling this first function so when we run this program the first function will be called inside this first function we are declaring a variable a assigning it with this value hello and then we are calling the second function inside the second function
+
+00:03:39	we are declaring this variable b assigning it with this value and then we are calling the third function so third function is called inside this third function we are declaring two variables c and z and assigning it with some values now once the execution of this function is complete this function will return and we are back to the second function and then we are declaring a variable y and to this variable y we are trying to assign the value of this variable b which is in upper case and the value of
+
+00:04:09	this variable name now this variable b is not declared anywhere in this program so here javascript engine will find an error and it will stop passing the code immediately and it will throw the error from this line so further line of codes will not be passed okay so javascript engine will find an error at this line it will stop it will throw the error and it will stop the passing of this code so let's save the changes and let's refresh the page so as you can see javascript engine has thrown this error and we can see that in
+
+00:04:47	this developer console okay now if we fix this error let's say let's change it to lowercase b so now there is no error in this javascript code and now when we run this javascript code in the browser javascript engine will again start passing this javascript code line by line and it will not find any error in this javascript code so since there is no error in this javascript code this javascript code will be converted to a data structure called as abstract syntax tree and from that data structure it will be
+
+00:05:23	converted to a machine code and once it is converted to the machine code completely javascript engine will run this javascript program and it will give us the output okay so here if i save this if i refresh the page you won't see any error but you're not seeing any result as well and that is because we are not logging anything inside this program so let's say we want to log the value of x y and z so console.log x and also log y and let's also log c let's save this changes and when we refresh the page now
+
+00:06:08	when we refresh this page again this javascript code will be executed inside the browser so again javascript engine will pass this javascript code line by line it will not find any error it will convert it into the machine code and then javascript engine will run that code and we will get this result okay so this is the high level of what happens when you run a javascript code inside the browser now every javascript engine does things in a slightly different way but this is the high level of what actually happens
+
+00:06:45	so in this lecture you learned how a javascript engine passes and executes a javascript code but there is a lot of things that happens behind the scene and we will learn about it in our next lecture if you like this lecture like this video subscribe to this channel and share it with your friends
+
+
+POINTS TO BE REMEMBER
+
+-> Everthing BIG is component in react.
+
+-> component can have data.(component apna data store kr skte hai through useState())
+
+->  Data of compponent is called state
+
+-> Change state and component will recalculated(agar aapko component ke kisi value ko change krna hai to aap uska state change kro uski value automaticaly chane ho jayegi)
+
+-> Props for sending data to child component(As data is stored in app and if we want to pass some this to a component we can not directly assign to that component the app will pass that information to component's parent(app's child) and then it will pass that to it's child this goes on until it reaches to that component)
+
+-> Effect runs when Dom loaded.
+
+-> jsx is similar to HTML
